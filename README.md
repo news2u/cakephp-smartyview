@@ -12,9 +12,9 @@ In plugin directory of your app:
 
 ## How to use
 
-### Install Smarty to Vendor directory.
+Install Smarty to Vendor directory.
 
-### Set $viewClass in AppController class;
+Set $viewClass in AppController class;
 
     class AppController extends Controller {   
 
@@ -32,16 +32,16 @@ In plugin directory of your app:
         ...
     }
     
-### Put Smarty Template in View directory instead of .ctp file.
+And put Smarty Template in View directory instead of .ctp file.
 
 ## Reference
 
 SmartyView original code are written by tclineks and icedcheese:
 
-    http://bakery.cakephp.org/articles/tclineks/2006/10/27/how-to-use-smarty-with-cake-smartyview
-    http://bakery.cakephp.org/articles/icedcheese/2008/01/14/smarty-view-for-1-2
+* http://bakery.cakephp.org/articles/tclineks/2006/10/27/how-to-use-smarty-with-cake-smartyview
+* http://bakery.cakephp.org/articles/icedcheese/2008/01/14/smarty-view-for-1-2
 
 Original Helpers are also written by tclineks
 
-    http://bakery.cakephp.org/articles/view/138 (currentry page not found)
+* http://bakery.cakephp.org/articles/view/138 (currentry page not found)
 
