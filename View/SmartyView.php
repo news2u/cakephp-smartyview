@@ -61,11 +61,11 @@ class SmartyView extends View
         switch ($this->smartyMajorVersion) {
             case 2:
                 $this->Smarty->clear_compiled_tpl();
-                $this->Smarty->plugins_dir[] = APP . 'View' . DS.'smarty_plugins'.DS;
+                $this->Smarty->plugins_dir[] = APP . 'Vendor' . DS . 'smarty' . DS . 'plugins' . DS;
                 break;
             case 3:
                 $this->Smarty->clearCompiledTemplate();
-                $this->Smarty->setPluginsDir(array(APP . 'View' . DS.'smarty_plugins'.DS));
+                $this->Smarty->setPluginsDir(array(APP . 'Vendor' . DS . 'smarty' . DS . 'plugins' . DS));
                 break;
         }
 
