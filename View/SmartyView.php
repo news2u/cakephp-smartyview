@@ -44,6 +44,9 @@ class SmartyView extends View
      */
 	function __construct (&$controller)
 	{
+		// Loading base class of Smarty Helpers
+        	App::uses('SmartyBaseHelper', $this->pluginName.'.'.'View/Helper');
+        
 		parent::__construct($controller);
 
 		$this->Smarty = new Smarty();
@@ -66,8 +69,6 @@ class SmartyView extends View
                 break;
         }
 
-        // Loading base class of Smarty Helpers
-        App::uses('SmartyBaseHelper', $this->pluginName.'.'.'View/Helper');
 	}
 
 /**
