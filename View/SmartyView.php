@@ -44,6 +44,9 @@ class SmartyView extends View
      */
 	function __construct (&$controller)
 	{
+		// Loading base class of Smarty Helpers
+        	App::uses('SmartyBaseHelper', $this->pluginName.'.'.'View/Helper');
+        
 		parent::__construct($controller);
 
 		$this->Smarty = new Smarty();
@@ -58,16 +61,14 @@ class SmartyView extends View
         switch ($this->smartyMajorVersion) {
             case 2:
                 $this->Smarty->clear_compiled_tpl();
-                $this->Smarty->plugins_dir[] = APP . 'View' . DS.'smarty_plugins'.DS;
+                $this->Smarty->plugins_dir[] = APP . 'Vendor' . DS . 'smarty' . DS . 'plugins' . DS;
                 break;
             case 3:
                 $this->Smarty->clearCompiledTemplate();
-                $this->Smarty->setPluginsDir(array(APP . 'View' . DS.'smarty_plugins'.DS));
+                $this->Smarty->setPluginsDir(array(APP . 'Vendor' . DS . 'smarty' . DS . 'plugins' . DS));
                 break;
         }
 
-        // Loading base class of Smarty Helpers
-        App::uses('SmartyBaseHelper', $this->pluginName.'.'.'View/Helper');
 	}
 
 /**
