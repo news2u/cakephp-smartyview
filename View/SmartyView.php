@@ -42,7 +42,7 @@ class SmartyView extends View
      *
      * @param  $controller instance of calling controller
      */
-	function __construct (&$controller)
+	function __construct ($controller)
 	{
 		parent::__construct($controller);
 
