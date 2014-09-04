@@ -8,7 +8,7 @@ Works with Smarty version 2.6 and 3.1 both.
 
 In plugin directory of your app:
 
-    git git://github.com/news2u/cakephp-smartyview.git SmartyView
+    git submodule add git://github.com/news2u/cakephp-smartyview.git SmartyView
 
 ## How to use
 
