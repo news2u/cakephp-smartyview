@@ -1,6 +1,6 @@
 <?php
 
-
+App::uses('SmartyBaseHelper', 'SmartyView.View/Helper');
 
 /**
  * SmartyHtml Helper class for wrapping HtmlHelper methods
